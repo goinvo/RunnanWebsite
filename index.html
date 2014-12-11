@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="background-color:#A3EFCD;color:white;text-align:center"> 
+	<head>
+		<meta charset="UTF-8">
+		<title>RUNNAN THE GAME</title>
+		<meta name="description" content="Runnan is simple game of survive. Not big plot! Many character isn't. Jumping platforms plus not fall down is of succeed. Go many far, lot of different graphic and friend see. Tap of screen for jumpup, once tap more for quick descend. Accurate move need for not all! Get tallest score. Gloating at colleague. Touching screens lots on title for rid of score." />
+		<meta name="keywords" content="runnan the game, runnan ios game, michael moffitt, robert audroue, involution studios" />
+		<!-- Go away, I'm not a web designer - Michael Moffitt -->
+		<img src="img/runnan-top.png" title="ラナンザゲーム"/><br /><br />		
+		<a href="https://itunes.apple.com/us/app/runnan/id672915929?ls=1&mt=8"><img style="position:center" src="img/applink.png"/></a><br /><br />
+		
+	</head>
+	<body>
+		<a href="mailto:runnan-reaction@goinvo.com"><img src="img/feedback.gif" /></a><br /><br />
+		<img id="shots" style="position:center" onclick="src='img/shots/' + Math.floor(Math.random()*7) + '.png';" src="img/shots/2.png" /><br /><br />
+		<img style="position:center" src="img/gametext.png" /><br /><br />
+		<a href="http://www.goinvo.com"><img style="position:center" src="img/credits.png" /></a><br /><br />
+		<img id="char"  style="position:center"src="img/set/char.png" /> <br /><br />
+		<img id="plat0" style="position:center"src="img/set/0.gif" /> <br />
+	</body>
+	<script language=javascript>
+		document.getElementById("plat0").src="img/set/" + Math.floor(Math.random()*10) + ".gif";
+		function setImg()
+		{
+			document.getElementById("plat0").src="img/set/" + Math.floor(Math.random()*10) + ".gif";
+			document.getElementById("shots").src='img/shots/' + Math.floor(Math.random()*6) + '.png';
+		}
+		var imgSetter=self.setInterval(function(){setImg()},4000);
+	</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-10273473-13', 'runnanthegame.com');
+	  ga('send', 'pageview');
+	</script>
+</html> 
